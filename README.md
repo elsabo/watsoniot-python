@@ -76,12 +76,10 @@ import paho.mqtt.client as watsonIoT
 ## Send the data
 After that you only need to send the data to WatsonIoT
 
-´´´
-     
+``` python
 	json_to_send = my_watsonIoT_message.to_JSON()	 
     watsonIoTClient.publish(watsonIoTHelper.topic, payload=json_to_send, qos=0, retain=False)
-
-´´´
+```
 
 ## Sample
 The **EnergySample.py** sample should be a good starting point; take the date **WatsonIotSampleData.csv** file and sends it to WatsonIoT platform
