@@ -26,7 +26,8 @@ Write down your organization, the device type, device id and the access token.
 ```
 
 ## JSON Data to publish
-WatsonIoT needs accepts json, make sure you create a python class to hold your data and then use the **D()** object 
+WatsonIoT consumes json, we will use Python's json module to serialize a python object into a json stream.
+Just make sure you create a python class to hold your data, then we will use the **D()** object from the module to serialize the object
 
 ``` python
 
