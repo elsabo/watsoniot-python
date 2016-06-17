@@ -84,5 +84,5 @@ After that you only need to send the data to WatsonIoT
 ## Sample
 The **EnergySample.py** sample should be a good starting point; take the date **WatsonIotSampleData.csv** file and sends it to WatsonIoT platform
 
-Hope this helps, if you need further clarification be sure to drop me a tweet @Sabo_IBM more than glad to help
+Hope this helps, if you need further clarification be sure to drop me a tweet [@Sabo_IBM](https://twitter.com/Sabo_IBM "Twitter") more than glad to help
 
