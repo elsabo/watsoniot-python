@@ -21,10 +21,11 @@ Write down your organization, the device type, device id and the access token.
 
 ``` python
 	watsonIoTHelper = WatsonIoTCnxHelper()
-	watsonIoTHelper.setBluemixIoT("your-watsoniot-org-name", "name-of-your-device-type", "your-device-id")
-	watsonIoTHelper.setCredentials("use-token-auth", "token-for-the-device")
+	watsonIoTHelper.setBluemixIoT("<your-watsoniot-org-name>", "<name-of-your-device-type>", "<your-device-id>")
+	watsonIoTHelper.setCredentials("use-token-auth", "<token-for-the-device>")
 ```
 
+Carefull here **use-token-auth** it's literal, that doesn't change
 ## JSON Data to publish
 WatsonIoT consumes json, we will use Python's json module to serialize a python object into a json stream.
 Just make sure you create a python class to hold your data, then we will use the **D()** object from the module to serialize the object
