@@ -17,7 +17,7 @@ https://developer.ibm.com/recipes/tutorials/how-to-register-devices-in-ibm-iot-f
 Write down your organization, the device type, device id and the access token.
 
 
-## The iot.bluemix package holds the **WatsonIoTCnxHelper** class that's the only thing you need
+#### The iot.bluemix package holds the **WatsonIoTCnxHelper** class that's the only thing you need
 
 ``` python
 	watsonIoTHelper = WatsonIoTCnxHelper()
@@ -26,7 +26,7 @@ Write down your organization, the device type, device id and the access token.
 ```
 
 ## JSON Data to publish
-WatsonIoT needs accepts json, make sure you create a python class to hold your data and the use the **D()** object 
+WatsonIoT needs accepts json, make sure you create a python class to hold your data and then use the **D()** object 
 
 ``` python
 
@@ -51,14 +51,14 @@ WatsonIoT needs accepts json, make sure you create a python class to hold your d
 ## Paho mqtt Client for python
 You'll need to install the Mqtt paho client for python
 
-´´´
+```
 >pip install paho-mqtt
-´´´
+```
 You can find more information here https://pypi.python.org/pypi/paho-mqtt/1.1
 
 Once you're set and done with the client you issue the following lines of code to connect to the WatsonIoT Platform
 
-´´´ python
+``` python
 import paho.mqtt.client as watsonIoT
 
 '''
@@ -69,7 +69,7 @@ import paho.mqtt.client as watsonIoT
 	watsonIoTClient.username_pw_set(watsonIoTHelper.userName, password=watsonIoTHelper.password)
 	watsonIoTClient.connect(host=watsonIoTHelper.broker, port=watsonIoTHelper.port, keepalive=60)
 
-´´´
+```
 
 ## Send the data
 After that you only need to send the data to WatsonIoT
@@ -82,7 +82,7 @@ After that you only need to send the data to WatsonIoT
 ´´´
 
 ## Sample
-The **EnergySample.py** sample file would help you publish the sample data on the **WatsonIotSampleData.csv** file
+The **EnergySample.py** sample should be a good starting point; take the date **WatsonIotSampleData.csv** file and sends it to WatsonIoT platform
 
 Hope this helps, if you need further clarification be sure to drop me a tweet @Sabo_IBM more than glad to help
 
